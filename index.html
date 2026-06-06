@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Pustaka Puisi - Belajar Puisi Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk tipografi yang lebih puitis -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- TOMBOL DI POJOK KANAN (dua tombol: back history + satu custom untuk nanti) -->
+    <div class="corner-buttons">
+        <button id="backBtn" class="nav-btn" title="Kembali ke halaman sebelumnya (riwayat)">
+            <i class="fas fa-arrow-left"></i> Kembali
+        </button>
+        <button id="extraBtn" class="nav-btn extra" title="Tombol tambahan (kembali ke tab sebelumnya dalam navigasi materi)">
+            <i class="fas fa-history"></i> Kembali ke Topik Sebelumnya
+        </button>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <div class="hero-text">
+                <h1>📖 Merangkai Kata, Menggugah Jiwa</h1>
+                <p>Pelajari unsur, jenis, dan cara mengapresiasi puisi secara interaktif</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.UcSzb1CRCW4r7ith88JoxQHaHa?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Suasana puitis - buku dan pena" loading="lazy">
+            </div>
+        </header>
+
+        <section class="topics-section">
+            <h2><i class="fas fa-feather-alt"></i> Topik Puisi</h2>
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topic cards akan di-generate via JS agar interaktif, tapi ditulis manual dengan data -->
+            </div>
+        </section>
+
+        <!-- Area penjelasan utama yang muncul ketika topik diklik -->
+        <section class="explanation-area" id="explanationArea">
+            <div class="explanation-header">
+                <h3 id="explanationTitle">✨ Penjelasan Puisi</h3>
+                <button id="closeExplanation" class="close-explain"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="explanation-content" id="explanationContent">
+                <p>Klik salah satu topik puisi di atas untuk menampilkan penjelasan lengkapnya di sini.</p>
+                <div class="placeholder-icon"><i class="fas fa-hand-pointer"></i></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Pustaka Puisi | Media pembelajaran sastra interaktif</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
